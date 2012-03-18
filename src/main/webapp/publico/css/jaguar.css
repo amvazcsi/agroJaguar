@@ -1,0 +1,244 @@
+a {
+    color: #FFFFFF;
+}
+.outputLabel
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	font-weight: bold;
+	width:100px;
+}
+
+.labelObrigatorio
+{
+	color: #FF0000;
+}
+
+.tdLabel{
+	width:69px;
+}
+
+.tdCampo{
+	width:69px;
+}
+
+.tdCampoData{
+	width:90px;
+}
+
+.normalText
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	width:100px;
+}
+
+.normalLabel
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	font-weight: bold;
+	width:100px;
+}
+
+.normalToobalLabel
+{
+	color: #FFFFFF;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	font-weight: bold;
+	width:100px;
+}
+
+
+.normalDataLabel
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	font-weight: bold;
+	width:130px;
+}
+
+
+.normalBalancaLabel
+{
+	color: red;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 9px;
+	font-weight: bold;
+	width:100px;
+}
+
+.tituloResumoBalanca
+{
+	color: black;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	font-weight: bold;
+	width:100px;
+}
+.normalErroLabel
+{
+	color: red;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 9px;
+	font-weight: bold;
+	width:100px;
+}
+
+.fieldsetLabel
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 9px;
+	font-weight: bold;
+}
+
+.columLabel
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 9px;
+	font-weight: bold;
+}
+
+.columRow{
+	background-position: left top;
+    border-bottom: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    border-width: 1px;
+    color: #0B356C;    
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    width: 10%;
+}
+.columGrid{
+	background-position: left top;
+    border-bottom: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    background-color: #D6E6FB;
+    border-width: 1px;
+    color: #0B356C;    
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    width: 4%;
+}
+
+.campoNormalText
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+	width:150px;
+}
+
+.campoNormalToobarText
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+	width:150px;
+}
+
+
+.campoTextDesvioPadrao
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+	width:60px;
+}
+.campoNormalColunaText
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+	width:140px;
+}
+
+.campoNormalClienteText
+{
+	color: #000000;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12px;
+	margin: 0;
+	font-weight: bold;
+	width:860px;
+}
+
+.coluna1 {  
+    text-align: left; 
+    width: 10%;
+}  
+  
+.coluna2 {  
+    text-align: left;
+    width: 50%;  
+}
+.coluna3 {  
+    text-align: left;
+    width: 400%;  
+}
+
+.barra {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-color: #C4C0C9;
+    border-style: solid;
+    border-width: 2px;
+    empty-cells: show;
+}
+
+

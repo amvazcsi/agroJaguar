@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:h="http://java.sun.com/jsf/html" 
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets" 
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich">
+      
+<body>
+	<ui:composition template="/restrito/xhtml/templates/template.xhtml">
+	    <ui:define name="body">
+	        <h:form id="dadosFornecedorForm">
+	        	<rich:collapsiblePanel id="dadosFornecedor" header="#{msg.dadosFornecedor}" switchType="client" rendered="true">
+	        		<rich:messages/>
+	        		<h:panelGrid id="gridDadosFornecedor">
+	        			<h:panelGrid columns="3">
+	        				<h:outputText value="*" styleClass="labelObrigatorio"/>
+							<h:outputText value="#{msg.nomeFornecedor}:" styleClass="outputLabel"/>   
+				 			<h:inputText id="descFornecedor" 
+				 						 value="#{cadastrarFornecedorMB.fornecedorBean.descricao}" 
+				 						 styleClass="campoNormalClienteText"/>
+	        			</h:panelGrid>
+	        		</h:panelGrid>
+	        		<h:panelGrid columns="2" width="100%"><hr/></h:panelGrid>
+	        		<h:panelGrid columns="3">
+						<a4j:commandButton value="#{msg.inserir}" render="listaFornecedorForm"/>
+		        		<a4j:commandButton value="#{msg.alterar}" render="listaFornecedorForm"/>
+		        		<a4j:commandButton value="#{msg.limpar}"/>
+		        	</h:panelGrid>
+		        	<h:panelGrid columns="1">
+	        			<h:outputText value="* Campo Obrigatorio" styleClass="labelObrigatorio"/>
+	        		</h:panelGrid>
+	        	</rich:collapsiblePanel>
+	        </h:form>
+	        <br/>
+	        <h:form id="listaFornecedorForm">
+				<rich:collapsiblePanel id="listaFornecedor" header="#{msg.listaFornecedor}" switchType="client">
+					<rich:dataTable id="listaAditivoTable"   
+									var="record" 
+									rows="15" 
+									style=" width : 100%;">    
+						<f:facet name="header">
+				            <rich:columnGroup> 
+				                <rich:column rowspan="2"><h:outputText value="#{msg.nomeFornecedor}"/></rich:column>
+				                <rich:column rowspan="2"><h:outputText value="#{msg.editar}"/></rich:column>
+				                <rich:column rowspan="2"><h:outputText value="#{msg.excluir}"/></rich:column>
+				            </rich:columnGroup>
+				        </f:facet>
+				        <rich:column colspan="1" styleClass="columLabel">
+				            <h:outputText value="#{record.descricao}" />
+				        </rich:column>
+				        <rich:column styleClass="columLabel">
+							<h:commandLink reRender="dadosFornecedorForm,dadosFornecedor">
+								<h:graphicImage value="/publico/images/icons/edit.gif" />
+								<f:setPropertyActionListener target="#{cadastrarFornecedorMB.fornecedorBean}" value="#{record}"/>
+							</h:commandLink>
+						</rich:column>
+						<rich:column styleClass="columLabel">
+							<h:commandLink reRender="listaFornecedorForm,listaFornecedor">
+								<h:graphicImage value="/publico/images/icons/delete.gif" />
+								<f:setPropertyActionListener target="#{cadastrarFornecedorMB.fornecedorBean}" value="#{record}"/>
+							</h:commandLink>
+						</rich:column>
+						<f:facet name="footer"> 
+							<rich:columnGroup>
+								<rich:column colspan="15">
+									<rich:dataScroller page="#{cadastrarFornecedorMB.page}" />
+								</rich:column>
+							</rich:columnGroup>
+						</f:facet>         
+					</rich:dataTable>
+				</rich:collapsiblePanel>
+	        </h:form>
+	    </ui:define>
+	</ui:composition>
+</body>
+</html>
